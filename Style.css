@@ -1,0 +1,131 @@
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #002d42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* th App styling is here */
+.app {
+  background-color: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 70px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.app h1 {
+  font-style: 25px;
+  color: #001e4d;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+
+.quiz {
+  padding: 20px 0;
+}
+
+.quiz h1 {
+  font-size: 18px;
+  color: #001e4d;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #fff;
+  color: #222;
+  font-weight: bold;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 20px;
+  margin: 12px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* after the answer selecting */
+
+.btn:hover:not([disabled]) {
+  color: #fff;
+  background-color: hsl(0, 0%, 10%);
+}
+
+.btn:disabled {
+  cursor: no-drop;
+}
+
+#next-btn {
+  margin-top: 20px;
+  text-align: center;
+  width: 20%;
+  margin-left: 220px;
+  padding: 15px;
+  background-color: #00c489;
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.correct {
+  background-color: #9aeabc;
+}
+
+.incorrect {
+  background-color: #ff7676;
+}
+
+@media (max-width: 500px) {
+  .app {
+    width: 75%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+  .app h1 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .quiz {
+    padding: 10px 0;
+  }
+
+  .btn {
+    padding: 12px;
+    margin: 8px 0;
+    font-weight: 400;
+  }
+
+  #next-btn {
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  h2 {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+}
